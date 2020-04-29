@@ -5,8 +5,10 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=14:antialias=true:autohint=true";
-static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
+/* static char *font = "mono:pixelsize=14:antialias=true:autohint=true"; */
+/* static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" }; */
+static char *font = "Source Code Pro:pixelsize=14:antialias=true:autohint=true";
+static char *font2[] = { "Source Code Pro:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -90,33 +92,48 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+/* Color Scheme */
+/* *.background: #000000 */
+/* *.foreground: white */
+/* *.cursorColor: white */
+/*  dwm colors */
+/* *.color0: #000000 */
+/* *.color2: #afd787 */
+/* *.color3: #ffb76d */
+/* *.color4: #87afd7 */
+/* *.color5: #d7afd7 */
+/* *.color6: #d78787 */
+/* *.color256: #d7afd7 */
+/* *.color257: #ffffff */
+
 /* bg opacity */
-float alpha = 0.92;
+/* float alpha = 0.92; */
+float alpha = 0.80;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
+	"#000000", /* hard contrast: #1d2021 / soft contrast: #32302f */ /* ORIGINAL #282828 */
+	"#cc241d",        /* ORIGINAL */        /* #cc241d */        /* MOD */        /*  */
+	"#afd787",        /* ORIGINAL */        /* #98971a */        /* MOD */        /* #d78787 */
+	"#ffb76d",        /* ORIGINAL */        /* #d79921 */        /* MOD */        /*  */
+	"#87afd7",        /* ORIGINAL */        /* #458588 */        /* MOD */        /*  */
+	"#d7afd7",        /* ORIGINAL */        /* #b16286 */        /* MOD */        /*  */
+	"#d78787",        /* ORIGINAL */        /* #689d6a */        /* MOD */        /* #afd787 */
+	"#a89984",        /* ORIGINAL */        /* #a89984 */        /* MOD */        /*  */
+	"#928374",        /* ORIGINAL */        /* #928374 */        /* MOD */        /*  */
+	"#fb4934",        /* ORIGINAL */        /* #fb4934 */        /* MOD */        /*  */
+	"#b8bb26",        /* ORIGINAL */        /* #b8bb26 */        /* MOD */        /*  */
+	"#fabd2f",        /* ORIGINAL */        /* #fabd2f */        /* MOD */        /*  */
+	"#83a598",        /* ORIGINAL */        /* #83a598 */        /* MOD */        /*  */
+	"#d3869b",        /* ORIGINAL */        /* #d3869b */        /* MOD */        /*  */
+	"#8ec07c",        /* ORIGINAL */        /* #8ec07c */        /* MOD */        /*  */
+	"#ffffff",        /* ORIGINAL */        /* #ebdbb2 */        /* MOD */        /*  */
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#add8e6", /* 256 -> cursor */
-	"#555555", /* 257 -> rev cursor*/
-	"#282828", /* 258 -> bg */
-	"#ebdbb2", /* 259 -> fg */
+	"#afd787", /* 256 -> cursor */    /* ORIGINAL */  /* #add8e6 */
+	"#87afd7", /* 257 -> rev cursor*/ /* ORIGINAL */  /* #555555 */
+	"#000000", /* 258 -> bg */        /* ORIGINAL */  /* #282828 */
+	"#ffffff", /* 259 -> fg */        /* ORIGINAL */  /* #ebdbb2 */
 };
 
 
